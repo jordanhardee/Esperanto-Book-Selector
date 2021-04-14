@@ -45,10 +45,16 @@ namespace Assignment5hardeehj
 
         private void button3_Click(object sender, EventArgs e)
          {
-             SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\jorda\OneDrive - University of Cincinnati\CSharpAssnment5\Assignment5hardeehj\La_Espero.wav");
-             simpleSound.Play();
+            //SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\jorda\OneDrive - University of Cincinnati\CSharpAssnment5\Assignment5hardeehj\La_Espero.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\hardeehj\Music\La_Espero.wav");
+            simpleSound.Play();
              //Need to make this work no matter file-path/ local link in the project directory
-         } 
-      
+         }
+
+        private void pauseButton_Click(object sender, EventArgs e)
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\hardeehj\Music\La_Espero.wav");
+            simpleSound.Stop();
+        }
     }
 }
