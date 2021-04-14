@@ -56,5 +56,10 @@ namespace Assignment5hardeehj
             SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\hardeehj\Music\La_Espero.wav");
             simpleSound.Stop();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
